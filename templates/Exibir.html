@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/estilo.css">
+    <title >{{ Titulo }}</title>
+</head>
+<body>
+
+    <h1 class="title">{{ Titulo }}</h1>
+     {% for futebol in lista %}
+        <div class="card">
+            <h3>Nome: {{futebol[1]}}</h3>
+            <p> Data De Surgimento: {{ futebol[2] }}</p>
+            <p> Titulos: {{ futebol[3] }}</p>
+            <p> Gols: {{ futebol[4] }}</p>
+        </div>
+     {% endfor %}
+    <div>
+    <a class="title" href="/">Voltar à Página Inicial</a>
+    </div>
+</body>
+</html>
